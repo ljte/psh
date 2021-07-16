@@ -8,7 +8,7 @@ all: compile run
 
 
 compile:
-	$(CC) $(SOURCE_FILES) -o $(OUTPUT)
+	$(CC) $(CFLAGS) $(SOURCE_FILES) -o $(OUTPUT)
 
 
 run:
