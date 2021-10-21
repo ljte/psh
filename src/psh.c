@@ -131,6 +131,8 @@ void mainLoop(void) {
         }
         args = split(line, SPLIT_DELIMS);
         if (execute(args) == 0) {
+            free(line);
+            free(args);
             exit(EXIT_SUCCESS);
         }
 
